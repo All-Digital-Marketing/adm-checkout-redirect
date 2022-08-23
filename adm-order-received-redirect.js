@@ -15,13 +15,14 @@ jQuery(($) => {
       console.log(res);
       if (res?.redirect && res.url) {
         if (location.href !== res.url) {
+          let waitTime = parseInt(res.js_wait);
           setTimeout(() => {
             if (res.key) {
               location.href = res.url + '?key=' + order_key
             } else {
               location.href = res.url
             }
-          }, 3000)
+          }, waitTime)
         }
       }
     }

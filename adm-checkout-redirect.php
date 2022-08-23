@@ -3,10 +3,10 @@
 Plugin Name: iDesigns Payment Complete Redirect
 Description: Redirect after successful payment complete. Global redirect or per category. Requires 'Advanced Custom Fields' plugin for product category functionality..
 Author: danielV
-Version: 3.3
+Version: 3.4
 Author URI: https://ibbotsondesigns.com.au/
 */
-const ADM_IPCR_VER = '3.3';
+const ADM_IPCR_VER = '3.4';
 
 defined('ABSPATH') || exit;
 
@@ -249,11 +249,16 @@ function adm_order_received_redirect() {
 function adm_get_redirect_endpoint($order_key): stdClass {
   $res           = new stdClass();
   $res->redirect = false;
+  $res->js_wait  = 3000;
   $res->key      = false;
   $res->url      = '';
   
   if ('yes' === get_option('wc_idesigns_wc_pass_order_key')) {
     $res->key = true;
+  }
+  
+  if ((int)get_option('wc_idesigns_wc_js_wait') > 100) {
+    $res->js_wait = (int)get_option('wc_idesigns_wc_js_wait');
   }
   
   if ('yes' === get_option('wc_idesigns_wc_default_enabled')) {

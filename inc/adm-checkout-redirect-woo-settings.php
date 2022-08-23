@@ -21,12 +21,19 @@ function idesigns_wc_all_settings($settings, $current_section) {
     );
     
     $settings_catalog_options[] = array(
-      'name'        => __('JavaScript redirect only', 'adm'),
-      'type'        => 'checkbox',
-      'id'          => 'wc_idesigns_wc_js_only',
-      'description' => 'This is useful to allow tracking scripts to function on the order received page. Then redirect after tracking has had a chance to collect data.',
+      'name' => __('JavaScript redirect only', 'adm'),
+      'type' => 'checkbox',
+      'id'   => 'wc_idesigns_wc_js_only',
+      'desc' => 'This is useful to allow tracking scripts to function on the order received page. Then redirect after tracking has had a chance to collect data.',
     );
     
+    $settings_catalog_options[] = array(
+      'name'    => __('JavaScript wait time', 'adm'),
+      'type'    => 'number',
+      'id'      => 'wc_idesigns_wc_js_wait',
+      'desc'    => 'Time in milliseconds. 1000ms = 1 second',
+      'default' => '3000',
+    );
     
     $settings_catalog_options[] = array(
       'name' => __('Enable default page', 'adm'),
@@ -35,10 +42,10 @@ function idesigns_wc_all_settings($settings, $current_section) {
     );
     
     $settings_catalog_options[] = array(
-      'name'        => __('Pass order key to next page', 'adm'),
-      'type'        => 'checkbox',
-      'id'          => 'wc_idesigns_wc_pass_order_key',
-      'description' => 'The order key may be needed if you are using any WooCommerce order shortcodes on the custom page.',
+      'name' => __('Pass order key to next page', 'adm'),
+      'type' => 'checkbox',
+      'id'   => 'wc_idesigns_wc_pass_order_key',
+      'desc' => 'The order key may be needed if you are using any WooCommerce order shortcodes on the custom page.',
     );
     
     
