@@ -14,7 +14,7 @@
   "sections": {
     "description": "Redirect after successful payment complete. Global redirect or per category. Requires 'Advanced Custom Fields' plugin for product category functionality.",
     "installation": "Click the activate button and that's it.",
-    "changelog": "<h4>1.0 –  August 2022</h4><ul><li>Bug fixes.</li><li>Initital release.</li></ul>"
+    "changelog": "<h4>1.0 –  August 2022</h4><ul><li>Bug fixes.</li><li>Initial release.</li></ul>"
   },
   "banners": {
     "low": "https://demo.alldigitalmarketing.com.au/plugins/adm-checkout-redirect/banner-772x250.jpg",
