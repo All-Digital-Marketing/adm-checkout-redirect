@@ -3,7 +3,7 @@
 Plugin Name: adm Payment Complete Redirect
 Description: Redirect after successful payment complete. Global redirect or per category. Requires 'Advanced Custom Fields' plugin for product category functionality..
 Author: danielV
-Version: 3.0
+Version: 3.2
 Author URI: https://ibbotsondesigns.com.au/
 */
 
@@ -20,7 +20,7 @@ class admCheckoutRedirectUpdateChecker {
   public function __construct() {
     
     $this->plugin_slug   = plugin_basename(__DIR__);
-    $this->version       = '1.1';
+    $this->version       = '3.2';
     $this->cache_key     = 'adm_custom_upd';
     $this->cache_allowed = true;
     
