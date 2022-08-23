@@ -8,7 +8,7 @@
   "version": "3.2",
   "download_url": "https://demo.alldigitalmarketing.com.au/plugins/adm-checkout-redirect.zip",
   "requires": "3.0",
-  "tested": "6.0",
+  "tested": "6.0.1",
   "requires_php": "7.4",
   "last_updated": "2022-08-23 02:10:00",
   "sections": {
