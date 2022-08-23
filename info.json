@@ -1,11 +1,11 @@
 {
-  "name": "adm Payment Complete Redirect",
+  "name": "iDesigns Payment Complete Redirect",
   "slug": "adm-checkout-redirect",
   "author": [
     "danielV"
   ],
   "author_profile": "https://dj3dw.com",
-  "version": "3.2",
+  "version": "3.3",
   "download_url": "https://demo.alldigitalmarketing.com.au/plugins/adm-checkout-redirect.zip",
   "requires": "3.0",
   "tested": "6.0.1",

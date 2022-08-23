@@ -1,12 +1,12 @@
 <?php
 /*
-Plugin Name: adm Payment Complete Redirect
+Plugin Name: iDesigns Payment Complete Redirect
 Description: Redirect after successful payment complete. Global redirect or per category. Requires 'Advanced Custom Fields' plugin for product category functionality..
 Author: danielV
-Version: 3.2
+Version: 3.3
 Author URI: https://ibbotsondesigns.com.au/
 */
-
+const ADM_IPCR_VER = '3.3';
 
 defined('ABSPATH') || exit;
 
@@ -20,7 +20,7 @@ class admCheckoutRedirectUpdateChecker {
   public function __construct() {
     
     $this->plugin_slug   = plugin_basename(__DIR__);
-    $this->version       = '3.2';
+    $this->version       = ADM_IPCR_VER;
     $this->cache_key     = 'adm_custom_upd';
     $this->cache_allowed = true;
     
