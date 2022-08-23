@@ -4,13 +4,12 @@ Plugin Name: iDesigns Payment Complete Redirect
 Plugin URI: https://ibbotsondesigns.com.au/
 Description: Redirect after successful payment complete. Global redirect or per category. Requires 'Advanced Custom Fields' plugin for product category functionality..
 Author: iDesigns
-Version: 3.0
+Version: 3.2
 Author URI: https://ibbotsondesigns.com.au/
 */
 
 require('inc/adm-checkout-redirect-woo-settings.php');
 require('inc/adm-checkout-acf.php');
-require('inc/updater.php');
 require('inc/adm-plugin-updater.php');
 
 add_filter('plugin_action_links_adm-checkout-redirect/adm-checkout-redirect.php', 'nc_settings_link');

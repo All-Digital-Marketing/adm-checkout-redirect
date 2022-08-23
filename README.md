@@ -1,6 +1,5 @@
-`~Current Version:3.0~`
+`~Current Version:x.x~`
 
 
 Shouts: 
-- https://github.com/radishconcepts/WordPress-GitHub-Plugin-Updater
 - https://ibbotsondesigns.com.au
