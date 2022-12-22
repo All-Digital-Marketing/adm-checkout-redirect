@@ -6,7 +6,7 @@
   ],
   "author_profile": "https://dj3dw.com",
   "version": "3.4",
-  "download_url": "https://demo.alldigitalmarketing.com.au/plugins/adm-checkout-redirect.zip",
+  "download_url": "https://demo.alldigitalmarketing.com.au/plugins/adm-checkout-redirect.zip?v=3.4",
   "requires": "3.0",
   "tested": "6.0.1",
   "requires_php": "7.4",
